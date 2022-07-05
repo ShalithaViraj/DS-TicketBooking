@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api/reservation" name="ReservationService" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/getReservation">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Reservation Service - GetReservation"/>
+            </log>
+            <send>
+                <endpoint key="GetReservation"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/addReservation">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Reservation Service - AddReservation"/>
+            </log>
+            <send>
+                <endpoint key="AddReservation"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/cancelReservation">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Reservation Service - CancelReservation"/>
+            </log>
+            <send>
+                <endpoint key="CancelReservation"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

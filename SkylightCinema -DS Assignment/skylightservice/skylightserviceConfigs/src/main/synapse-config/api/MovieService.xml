@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api/movie" name="MovieService" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/getAllMovies">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Movie Service - GetAllMovies"/>
+            </log>
+            <send>
+                <endpoint key="GetAllMovies"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/addMovie">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Movie Service - AddMovie"/>
+            </log>
+            <send>
+                <endpoint key="AddMovie"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/editMovie">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Movie Service - EditMovie"/>
+            </log>
+            <send>
+                <endpoint key="EditMovie"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="DELETE" uri-template="/deleteMovie">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Movie Service - DeleteMovie"/>
+            </log>
+            <send>
+                <endpoint key="DeleteMovie"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

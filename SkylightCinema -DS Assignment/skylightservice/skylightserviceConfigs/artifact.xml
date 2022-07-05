@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="GetAllMovies" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GetAllMovies.xml</file>
+    </artifact>
+    <artifact name="MovieService" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/MovieService.xml</file>
+    </artifact>
+    <artifact name="AddMovie" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AddMovie.xml</file>
+    </artifact>
+    <artifact name="EditMovie" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/EditMovie.xml</file>
+    </artifact>
+    <artifact name="DeleteMovie" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/DeleteMovie.xml</file>
+    </artifact>
+    <artifact name="UserRegister" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/UserRegister.xml</file>
+    </artifact>
+    <artifact name="UserSignIn" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/UserSignIn.xml</file>
+    </artifact>
+    <artifact name="GetCart" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GetCart.xml</file>
+    </artifact>
+    <artifact name="AddCart" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AddCart.xml</file>
+    </artifact>
+    <artifact name="EditCart" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/EditCart.xml</file>
+    </artifact>
+    <artifact name="DeleteCart" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/DeleteCart.xml</file>
+    </artifact>
+    <artifact name="GetReservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GetReservation.xml</file>
+    </artifact>
+    <artifact name="AddReservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AddReservation.xml</file>
+    </artifact>
+    <artifact name="CancelReservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/CancelReservation.xml</file>
+    </artifact>
+    <artifact name="UserService" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/UserService.xml</file>
+    </artifact>
+    <artifact name="CartService" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/CartService.xml</file>
+    </artifact>
+    <artifact name="ReservationService" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/ReservationService.xml</file>
+    </artifact>
+</artifacts>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api/user" name="UserService" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/register">
+        <inSequence>
+            <log>
+                <property name="message" value="Access User Service - Register"/>
+            </log>
+            <send>
+                <endpoint key="UserRegister"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/signin">
+        <inSequence>
+            <log>
+                <property name="message" value="Access User Service - SignIn"/>
+            </log>
+            <send>
+                <endpoint key="UserSignIn"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

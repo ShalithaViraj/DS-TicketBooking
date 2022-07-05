@@ -1,0 +1,5 @@
+.card-movie-poster {
+    width: 275px;
+    height: 340px;
+    object-fit: cover;
+}

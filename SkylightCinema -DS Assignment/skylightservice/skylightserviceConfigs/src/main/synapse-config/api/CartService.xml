@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api/cart" name="CartService" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/getCart">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Cart Service - GetCart"/>
+            </log>
+            <send>
+                <endpoint key="GetCart"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/addCart">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Cart Service - AddCart"/>
+            </log>
+            <send>
+                <endpoint key="AddCart"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/editcart">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Cart Service - EditCart"/>
+            </log>
+            <send>
+                <endpoint key="EditCart"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="DELETE" uri-template="/deleteCart">
+        <inSequence>
+            <log>
+                <property name="message" value="Access Cart Service - DeleteCart"/>
+            </log>
+            <send>
+                <endpoint key="DeleteCart"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
